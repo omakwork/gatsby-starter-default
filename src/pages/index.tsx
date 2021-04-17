@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage: React.FC = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
@@ -15,7 +15,7 @@ const IndexPage = () => (
       src="../images/gatsby-astronaut.png"
       width={300}
       quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
+      formats={["auto", "webp", "avif"]}
       alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     />
